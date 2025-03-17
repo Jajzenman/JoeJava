@@ -18,5 +18,7 @@ line1.map(function(word){
 $("#poem").html(line1Text) ;
 
 $("poem a").click(function(){
-    $("#info").html("<h2>You clicked on a word!</h2>");
+    let infoText, clickedWord;
+    infoText = "<h2>You clicked on the word: " + clickedWord + "</h2>";
+    $("#info").html(infoText);
 });
